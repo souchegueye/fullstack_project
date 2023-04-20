@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM getElementByTagName</title>
+  </head>
+  <body>
+    <h1>getElementByTagName</h1>
+    <p id="p1">This is a Paragraph</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>JQuery</li>
+      <li>BootStrap</li>
+    </ul>
+    <script>
+      const liData = document.getElementsByTagName("li");
+      // document.write(liData.)
+      for (let i = 0; i < liData.length; i++) {
+        document.write(liData[i].textContent + "<br>");
+      }
+    </script>
+  </body>
+</html>

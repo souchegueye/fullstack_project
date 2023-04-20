@@ -1,0 +1,12 @@
+var ageToVote = 18;
+ var age_1 = 25;
+ 
+ 
+ if (age_1 < ageToVote){
+    console.log("You cannot vote");
+
+ } else if(age_1>= ageToVote){
+
+    console.log("You can vote");
+
+ }

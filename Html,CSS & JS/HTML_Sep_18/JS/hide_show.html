@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          //made that the button click me disappear
+          $("p").hide();
+        });
+        $("#show").click(function () {
+          //made that the button click me disappear
+          $("p").show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>If you click it wil disappear or show</p>
+
+    <button id="hide">Click me</button>
+    <button id="show">Click me</button>
+  </body>
+</html>

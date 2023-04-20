@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Do While Demo</title>
+  </head>
+  <body>
+    <script>
+      var emp_nos = Number(prompt("Enter the  no of Employees"));
+      var i = 1;
+      do {
+        var name = prompt("EmpName:");
+        var eid = Number(prompt("Employee Id:"));
+        var bas_sal = Number(prompt("Basic Salary"));
+
+        var hra = (bas_sal * 30) / 100;
+        var da = (bas_sal * 19) / 100;
+        var pf = (bas_sal * 12) / 100;
+        var esi = (bas_sal * 20) / 100;
+        var tot_ear = bas_sal + hra + da;
+        var tot_ded = pf + esi;
+        var net_pay = tot_ear - tot_ded;
+
+        document.write("============================");
+        document.write("            PaySlip          :" + i + "<br>");
+        document.write("============================");
+        document.write("Employee Name:" + name + "<br>");
+        document.write("Employee Id:" + eid + "<br>");
+        document.write("Basic Salary:" + bas_sal + "<br>");
+        document.write("Total Earnings:" + tot_ear + "<br>");
+        document.write("Total Deductions:" + tot_ded + "<br>");
+        document.write("Gross Pay:" + net_pay + "<br>");
+        i++;
+      } while (i <= emp_nos);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("tr:odd").css("background-color", "pink");
+        $("tr:even").css("background-color", "yellow");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Table odd row</h1>
+    <table border="2">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Dept</th>
+      </tr>
+      <tr>
+        <td>10011</td>
+        <td>Name1</td>
+        <td>Dept1</td>
+      </tr>
+      <tr>
+        <td>10022</td>
+        <td>Name2</td>
+        <td>Dept2</td>
+      </tr>
+      <tr></tr>
+    </table>
+  </body>
+</html>

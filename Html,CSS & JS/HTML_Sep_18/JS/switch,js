@@ -1,0 +1,23 @@
+
+const readLine = require('readline');
+const rl =readLine.createInterface({input:process.stdin,output:process.stdout});
+rl.question('Enter the Account Type?',(pro_price)=>{ 
+switch(pro_price)
+{
+    case 10000:
+        var discount = pro_price * 15/100;
+        console.log("Discount is :"+discount);
+        break;
+        case 15000:
+            var discount = pro_price * 20/100;
+            console.log("Discount is :"+discount);
+            break;
+            case 25000:
+         var discount = pro_price * 23/100;
+         console.log("Discount is :"+discount);
+                break;
+        default :
+        var discount = pro_price * 10/100;
+         console.log("Discount is :"+discount);
+         break;
+}});
